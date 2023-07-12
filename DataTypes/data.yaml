@@ -1,0 +1,55 @@
+#String Variable
+myself: Sushant Singh Negi
+fruit: "apple"
+job: 'swe'
+
+
+#bio: | Hy my name is sushant singh negi i am cool dude
+
+# Write a single line in multiple lines
+message: >
+  this will
+  all be 
+  in one single line
+
+# Same as
+messages: this will all be in one single line
+
+
+#Float 
+number: 5473
+marks: 98.57
+booleanValue: N0 #n. N, false, False, FALSE
+
+#same for true -> yes, y, Y
+
+#specify the type
+zero: !!int 0
+positiveNum: !!int 45
+negativeNum: !!int -45
+binaryNum: !!int 0b11001
+octalNum: !!int 06574
+hexa: !!int 0x45
+commaValue: !!int +540_000 #540,000
+exponential number: 6.023E56
+
+# floating point number
+mark: !!float 56.89
+infinite: !!float .inf
+
+
+# Boolean
+booleanValues: !!bool N0 #n. N, false, False, FALSE
+
+#String 
+messageses: !!str this will all be in one single line
+not a num: .nan
+
+#null
+suname: !!null Null # or null NULL
+~: this is null key
+
+#dates and time
+date: !!timestamp 2002-12-14
+india time: 2001-12-15T02:59:43.10 +5:30
+no time zone: 2001-12-15T02:59:43.10

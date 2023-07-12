@@ -1,0 +1,90 @@
+Student: !!seq
+  - marks
+  - name
+  - roll_no
+
+# like this also
+cities: [new delhi, mumbai]
+
+# some of the key of the seq will be empty
+# sparse seq
+
+sparse seq:
+  - hey
+  - how
+  - 
+  - Null
+  - sup
+
+#nested sequence 
+-
+  - mango
+  - apple
+  - banana
+-
+  - marks
+  - roll_no
+  - data
+
+#Maps = key : value pairs
+!!map
+
+# nested mapping
+name: sushant singh negi
+role:
+  age: 70
+  jon: student
+
+# same as
+name: sushant singh negi
+role: { age: 70, job: student}
+
+#pairs: keys may have duplicate values
+#!!pairs
+
+pairs example: !!pairs
+  - job: student
+  - job: teacher
+
+#same as
+pair example: !!pairs [job: student, job: teacher]
+#this will be an array of hashtables
+
+# !!set will allow you to have unique value
+names: !!set
+  ? Sushant
+  ? Ashutosh
+  ? Ayush
+
+#dictonary !!omap
+
+people: !!omap
+  - Sushant: 
+    name: Sushant Singh Negi
+    age: 70
+    height: 157
+  
+  - Ashutosh:
+    name: Ashutosh
+    age: 70
+    height: 160
+
+
+# reusing some properties using anchors
+linkings: &likes
+  fav fruit: mango
+  dislike: grapes
+
+personal:
+  name: sushant Singh Negi
+  <<: *likes ## same as line 84, 85, 88, 89
+
+personal1:
+  name: Ashu
+  fav fruit: mango
+  dislikes: garaps
+
+personal2:
+  name: Negi
+  fav fruit: mango
+  dislikes: garaps
