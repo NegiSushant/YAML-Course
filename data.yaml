@@ -1,0 +1,12 @@
+foo: 0
+bar: "string"
+#---
+"apple" : "I am a red fruit!"
+1: "this is sushant's roll number!"
+#---
+cities:
+- new delhi
+- mumbai
+- gujrat
+#---
+#cities: [new delhi, mumbai]
